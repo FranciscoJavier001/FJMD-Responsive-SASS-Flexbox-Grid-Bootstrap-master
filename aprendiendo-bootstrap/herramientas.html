@@ -1,34 +1,38 @@
 <!doctype html>
-<html lang="en">
+<html lang="en"> <!-- Iniciamos el Documento Html en Ingles -->
 
-<head>
-    <title>Aprendiendo Bootstrap</title>
-    <!-- Required meta tags -->
+<head> <!-- Inicio de la Cabecera -->
+    <title>Simple Website Responsive</title> <!-- La pestaña del Titulo -->
+    
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- Metadatos -->
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <header class="col-md-12 mt-2">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container"> <!-- Todo va a estar dentro de un contenedor -->
+        <div class="row"> <!-- Es un margen que pongo entre todo arriba y el inicio del primer componente -->
 
-                    <a class="navbar-brand" href="#">COMPONENTES</a>
+            <header class="col-md-12 mt-2"> <!-- Es la distancia de lo que mide la cabecera, y tiene un margen superior -->
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!-- Que sea una navbar, que la barra se muestre con sus links en tamaño grande, que tenga colores blancos, porque la puse negra y que su fondo sea negro -->
 
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <a class="navbar-brand" href="#">Components</a> <!-- Es el Brand -->
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"> <!-- Lo hago un boton de navegacion, que su tipo sea boton, que se colapse, hacia donde apunta -->
+
+                      <span class="navbar-toggler-icon"></span> <!-- Que el icono se muestre como una hamburguesa -->
+                    </button> 
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!-- Inicie Colapsada, que sea como una barra de navegacion colapsada, a donde apunta el target l23 -->
+                        
+                        <ul class="navbar-nav mr-auto"> <!-- Estado como barra de navegacion, y que el margen se mueva hacia la izquierda -->
+                            
+                            <li class=""> <!-- Lista -->
+                                <a class="nav-link" href="#">Home</a> <!-- Enlace que comparta estilos con los demas -->
                             </li>
-                            <li class="nav-item">
+                            <li class="">
                                 <a class="nav-link" href="#">Link</a>
                             </li>
                             <li class="nav-item dropdown">

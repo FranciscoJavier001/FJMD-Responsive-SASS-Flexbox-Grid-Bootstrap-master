@@ -26,10 +26,10 @@
                         
                         <ul class="navbar-nav mr-auto"> <!-- Estado como barra de navegacion, y que el margen se mueva hacia la izquierda -->
                             
-                            <li class=""> <!-- Lista -->
+                            <li> <!-- Lista -->
                                 <a class="nav-link" href="#">Home</a> <!-- Enlace que comparta estilos con los demas -->
                             </li>
-                            <li class=""> <!-- Etiqueta de Lista -->
+                            <li> <!-- Etiqueta de Lista -->
                                 <a class="nav-link" href="#">Link</a> <!-- Estilos iguales y su referencia de donde llevan -->
                             </li>
                             <li class="dropdown"> <!-- Etiqueta Lista, que si le pico se muestre -->
@@ -51,23 +51,24 @@
                                 <li>
                                     <form class="input-group mx-2"> <!-- Elementos mismo grupo, mas a la derecha -->
                                         <input class="form-control mr-sm-2" placeholder="Search"/> <!-- Area de texto, tipo formulario, que se valla a la derecha si hay estacio, dentro de este campo encontramos una palabra -->
-                                        <button class="btn btn-outline-success" type="submit">xD</button> <!-- Boton con su contorno verde -->
+                                        <button class="btn btn-outline-success" type="submit">Serch</button> <!-- Boton con su contorno verde -->
                                     </form>
                                 </li>
                             </li>
-
+                            
                         </ul>
+
                         <ul>
-                            <ul class="navbar-nav">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <ul class="navbar-nav"> <!-- Lista desordenada con los estilos de la barra de navegacion -->
+                                <li class="dropdown"> <!-- Que sea una lista que se desplace hacia abajo -->
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">
                                 Francisco J. Martinez
-                              </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Something else</a>
+                              </a> <!-- Que sea un enlace de navegacion, que tenga el boton de que se baja o se sube, que no lleve a nada, que tenga su identificador, con la capacidad de desplazarse a abajo -->
+                                    <div class="dropdown-menu"> <!-- Que tengan menu desplegable -->
+                                        <a class="dropdown-item" href="#">Action</a> <!-- Que tenga un Item con el estilo de bara de navegacion -->
+                                        <a class="dropdown-item" href="#">Another action</a> <!-- Que tenga un Item con el estilo de bara de navegacion -->
+                                        <div class="dropdown-divider"></div> <!-- Que tengas un separador -->
+                                        <a class="dropdown-item" href="#">Something else</a><!-- Que tenga un Item con el estilo de bara de navegacion -->
                                     </div>
                                 </li>
                             </ul>

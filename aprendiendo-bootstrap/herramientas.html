@@ -370,15 +370,18 @@
           </div>
 
           <script>
-            var contador = 0;
+            //* Inicio una funcion */
+            let contador = 0; //* Inicializo una variable en 0, que puede ir cambiando */
             setInterval(function () {
+              //* Intervalo que inicializa una funcion que no recibe nada e inicia esta secuencia */
               if (contador < 100) {
-                contador++;
-                var barra = document.querySelector("#barra-progreso");
-                barra.style.width = contador + "%";
-                barra.innerHTML = contador + "%";
+                //* Si el contador es menor a 100 */
+                contador++; //* Que el contador vala aumentando de 1 en 1 */
+                let barra = document.querySelector("#barra-progreso"); //* Definimos una variable y seleccionamos el id de barra de progreso */
+                barra.style.width = contador + "%"; //* La anchura de la barra de progreso es el contador mas su porcentaje (que crezca segun su numero) */
+                barra.innerHTML = contador + "%"; //* En el DOM mostramos el contador, mas su porcentaje */
               }
-            }, 100);
+            }, 100); //* Son los milosegundos que tarda en llenarse */
           </script>
 
           <div class="row justify-content-around align-items-center mt-3">
@@ -388,7 +391,7 @@
               data-toggle="tooltip"
               data-placement="bottom"
               title="Si das click scaras una alerta">
-              Alerta
+              Alert
             </button>
             <button
               type="button"
@@ -396,7 +399,7 @@
               data-toggle="tooltip"
               data-placement="right"
               title="Si das click scaras una alerta">
-              Alerta II
+              Alert
             </button>
             <button
               type="button"
@@ -406,7 +409,7 @@
               data-placement="bottom"
               title="Prueba"
               data-content="Esto es un Popover">
-              Alerta III
+              Alert
             </button>
           </div>
 

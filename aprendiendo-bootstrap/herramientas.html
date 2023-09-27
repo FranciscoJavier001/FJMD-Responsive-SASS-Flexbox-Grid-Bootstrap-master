@@ -351,11 +351,14 @@
             href="#informacion">
             Show Information
           </a>
-          <!-- Enlace que es un boton, fondo color verde, con margen superior, ocupa el 12 de espacio (En lo que puedo asignarle espacio), su funcion es ser colapsabe yun click lleva a ese id -->
+          <!-- Enlace que es un boton, fondo color verde, con margen superior, ocupa el 12 de espacio (En lo que puedo asignarle espacio), su funcion es ser colapsable y un click lleva a ese id -->
 
           <div class="collapse" id="informacion">
-            <div class="card card-body bg-dark text-white mt-2">
-              Esta es la Informacion Oculta
+            <!-- Div Colapsable (Inicia Oculto) con su ID (Ahi le di la funcionalidad) -->
+
+            <div class="card-body bg-dark text-white mt-2">
+              <!-- Estilo de cuerpo de tarjeta, con fondo negro, texto blanco y margen superior de 2 -->
+              This is a Hidden Information
             </div>
           </div>
 
@@ -379,32 +382,34 @@
             }, 100);
           </script>
 
-          <button
-            type="button"
-            class="btn-tool btn btn-danger mt-3"
-            data-toggle="tooltip"
-            data-placement="bottom"
-            title="Si das click scaras una alerta">
-            Alerta
-          </button>
-          <button
-            type="button"
-            class="btn-tool btn btn-warning mt-3"
-            data-toggle="tooltip"
-            data-placement="right"
-            title="Si das click scaras una alerta">
-            Alerta II
-          </button>
-          <button
-            type="button"
-            class="btn-pop btn btn-info mt-3"
-            data-container="body"
-            data-toggle="popover"
-            data-placement="bottom"
-            title="Prueba"
-            data-content="Esto es un Popover">
-            Alerta III
-          </button>
+          <div class="row justify-content-around align-items-center mt-3">
+            <button
+              type="button"
+              class="btn-tool btn btn-danger col-3"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title="Si das click scaras una alerta">
+              Alerta
+            </button>
+            <button
+              type="button"
+              class="btn-tool btn btn-warning col-3"
+              data-toggle="tooltip"
+              data-placement="right"
+              title="Si das click scaras una alerta">
+              Alerta II
+            </button>
+            <button
+              type="button"
+              class="btn-pop btn btn-info col-3"
+              data-container="body"
+              data-toggle="popover"
+              data-placement="bottom"
+              title="Prueba"
+              data-content="Esto es un Popover">
+              Alerta III
+            </button>
+          </div>
 
           <div class="jumbotron my-3">
             <h1 class="display-5">Mi Sitio Web</h1>

@@ -290,32 +290,33 @@
 
         <div class="col-md-4">
           <!-- Habia asignado 8 de espacio, solo queda 4 en el cuerpo de la pantalla -->
+
           <button
-            class="btn btn-primary mt-3"
+            class="btn btn-primary mt-3 col-12"
             data-toggle="modal"
             data-target="#exampleModal">
             Show Window
           </button>
-          <!-- Creo un boton, color verde, margen superior, click muestre ventana, a donde apunta su funcionalidad -->
+          <!-- Creo un boton, color verde, margen superior, que ocupe todo el espacio, click muestre ventana, a donde apunta su funcionalidad -->
 
-          <div
-            class="modal fade"
-            id="exampleModal"
-            tabindex="-1"
-            role="dialog"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
+          <div class="modal" id="exampleModal">
+            <!-- Division, se va a mostrar una ventana pop up al hacer click, le doy un id -->
+
+            <div class="modal-dialog">
+              <!-- Mostramos ventana tipo Modal -->
+
               <div class="modal-content">
+                <!-- Contenido del Modal, que salga la ventana bonita -->
+
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">
-                    ¿Estas seguro de querer ver esta ventana?
+                  <!-- Le damos estilos a la cabecera del Modal -->
+
+                  <h5>
+                    <!-- Subtitulo en la ventana Modal -->
+                    Are you sure that you want to see this Modal?
                   </h5>
-                  <button
-                    type="button"
-                    class="close"
-                    data-dismiss="modal"
-                    aria-label="Close">
+
+                  <button class="close" data-dismiss="modal">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
@@ -337,7 +338,7 @@
 
           <!-- COLLAPSE -->
           <a
-            class="btn btn-success mt-3"
+            class="btn btn-success mt-3 col-12"
             data-toggle="collapse"
             href="#informacion"
             rolle="button">
